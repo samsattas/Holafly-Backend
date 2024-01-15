@@ -37,3 +37,15 @@ export async function getUserByUsername(req: Request, res: Response) {
     return res.status(500).json({ message: error });
   }
 }
+
+export async function getCardsByUser(req: Request, res: Response) {
+  try {
+    const user = await User.findOne({
+      where: { username: req.params.username },
+    });
+
+    if (user) return res.json(user.cards);
+  } catch (error) {
+    return res.status(500).json({ message: error });
+  }
+}

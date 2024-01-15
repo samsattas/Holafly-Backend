@@ -3,11 +3,13 @@ import { User } from "./entities/User";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: "dpg-cmiamsed3nmc73cifang-a",
+  host: "monorail.proxy.rlwy.net",
+  //host: "localhost",
   username: "postgres",
-  password: "tQD10xpeRCufrUGFyUNMLcOiUmz7t0hb",
-  port: 5432,
-  database: "holaflydb",
+  password: "eC326edFc-E*32fC53a*5C13-3afFBCG",
+  //password: "postgres",
+  port: 49650,
+  database: "railway",
   entities: [User],
   logging: true,
   synchronize: true,
