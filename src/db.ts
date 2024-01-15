@@ -3,9 +3,9 @@ import { User } from "./entities/User";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: "localhost",
+  host: "dpg-cmiamsed3nmc73cifang-a",
   username: "postgres",
-  password: "postgres",
+  password: "tQD10xpeRCufrUGFyUNMLcOiUmz7t0hb",
   port: 5432,
   database: "holaflydb",
   entities: [User],
